@@ -60,7 +60,12 @@ Let's type this into the terminal `sudo nano /etc/apache2/sites-available/000-de
 `        ProxyPass /socket.io/ http://localhost:3000/socket.io/
         ProxyPassReverse /socket.io/ http://localhost:3000/socket.io/
 `
+After we add those two lines to the config file, we need to enable the proxy by typing `sudo a2enmod proxy` and then follow-up with `sudo a2enmod proxy_http`. It wouldn't hurt to let apache2 to restart `sudo systemctl restart apache2`
 
+
+## Usage
+
+Hopefully, if everything went our way, there is one final step to do now. Make sure we are in the /var/www/html directory where we have all our files cloned and the website is up and running. We will now type `node app.js` and it should occupy your terminal with a message "Server is running on port 3000". To verify that everything is working, you can open up another tab and watch that Connected Uers in the top left go from 1 to 2 and start typing and looking at the messages from both side.
 
  
  
