@@ -1,4 +1,4 @@
-const socket = io();
+const socket = io('ws://{DOMAIN}:PORT');
 
 
 socket.on("userCountUpdate", (count) => {
