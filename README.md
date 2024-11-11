@@ -67,5 +67,10 @@ After we add those two lines to the config file, we need to enable the proxy by 
 
 Hopefully, if everything went our way, there is one final step to do now. Make sure we are in the /var/www/html directory where we have all our files cloned and the website is up and running. We will now type `node app.js` and it should occupy your terminal with a message "Server is running on port 3000". To verify that everything is working, you can open up another tab and watch that Connected Uers in the top left go from 1 to 2 and start typing and looking at the messages from both side.
 
+
+## Credits
+ - https://youtu.be/1BfCnjr_Vjg?si=p2eUEKHcgljGpm2x
+ - https://www.youtube.com/watch?v=1BfCnjr_Vjg
+
  
  
