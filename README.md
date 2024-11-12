@@ -67,6 +67,10 @@ After we add those two lines to the config file, we need to enable the proxy by 
 
 Hopefully, if everything went our way, there is one final step to do now. Make sure we are in the /var/www/html directory where we have all our files cloned and the website is up and running. We will now type `node app.js` and it should occupy your terminal with a message "Server is running on port 3000". To verify that everything is working, you can open up another tab and watch that Connected Uers in the top left go from 1 to 2 and start typing and looking at the messages from both side.
 
+## Future work
+
+I am planning to add mySQL into this website so that it can have users register and log in so instead of having no usernames, it will display their name. I also plan on making it so that you dont need an account and it will just say guest. But in order to do this, I need to hash the passwords to secure them. I am currently looking into bcryptjs and argon2 to decide which one will be used. 
+
 
 ## Credits
  - https://youtu.be/1BfCnjr_Vjg?si=p2eUEKHcgljGpm2x
