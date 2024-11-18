@@ -69,7 +69,7 @@ Hopefully, if everything went our way, there is one final step to do now. Make s
 
 ## Future work
 
-I am planning to add mySQL into this website so that it can have users register and log in so instead of having no usernames, it will display their name. I also plan on making it so that you dont need an account and it will just say guest. But in order to do this, I need to hash the passwords to secure them. I am currently looking into bcryptjs and argon2 to decide which one will be used. 
+I was able to integrate mySQL to allow usernames and passwords to log in but still need to work more to allow password recovery and focus more on the secuirty ascepts of the website to prevent injection attacks.
 
 
 ## Credits
