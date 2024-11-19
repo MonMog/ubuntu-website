@@ -1,39 +1,221 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
+  background-color: #f3f4f6; 
+  color: #333; 
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
+  min-height: 100vh;
 }
+
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+}
+
+
+#toggleModalButton {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  padding: 10px 15px;
+  background-color: #2563eb; 
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+#toggleModalButton:hover {
+  background-color: #1e40af; 
+}
+
+
+#modalContainer {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  width: 100%;
+  max-width: 400px;
+  background-color: #ffffff; 
+  border-radius: 12px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+
+#loginContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#loginContainer h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2563eb;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#loginForm, #registerForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#loginForm input, #registerForm input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+#loginForm input:focus, #registerForm input:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+
+#loginForm button, #registerForm button {
+  padding: 12px;
+  color: #fff;
+  background-color: #2563eb;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+#loginForm button:hover, #registerForm button:hover {
+  background-color: #1e40af;
+}
+
+
+#logoutButton {
+  padding: 8px 16px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: #ef4444;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#logoutButton:hover {
+  background-color: #b91c1c; 
+}
+
 
 #connectedUsers {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  font-weight: bold;
+  top: 15px;
+  left: 15px;
+  font-weight: 600;
+  color: #2563eb;
 }
 
+
 #chatContainer {
-  width: 800px;
-  border: 1px solid #ccc;
-  padding: 10px;
-  border-radius: 5px;
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #chatBox {
-  height: 800px;
+  height: 350px;
   overflow-y: auto;
   border: 1px solid #ddd;
   margin-bottom: 10px;
-  padding: 5px;
+  padding: 10px;
+  background-color: #f9fafb; 
+  border-radius: 8px;
+}
+
+#chatBox div {
+  margin-bottom: 8px;
+  font-size: 14px;
 }
 
 #messageInput {
-  width: 730px;
-  padding: 5px;
-  margin-right: 5px;
+  width: calc(98% - 90px);
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+#messageInput:focus {
+  border-color: #2563eb;
+  outline: none;
 }
 
 #sendButton {
+  padding: 14px;
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#sendButton:hover {
+  background-color: #1e40af;
+}
+
+@media (max-width: 768px) {
+  #chatContainer {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+
+#userList {
+  margin-top: 10px;
+  padding: 0;
+  list-style: none;
+  max-height: 150px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
   padding: 5px;
+  background-color: #f9f9f9;
+}
+
+.user-list-item {
+  padding: 5px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.user-list-item:hover {
+  background-color: #efefef;
 }
