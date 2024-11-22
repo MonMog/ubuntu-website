@@ -41,6 +41,15 @@
     <div id="chatBox"></div>
     <input type="text" id="messageInput" placeholder="Type a message...">
     <button id="sendButton">Send</button>
+
+    <div id="privateChatBox">
+      <button id="closePrivateChat">X</button>
+      <div id="privateChatHeader">You are now privately chatting with <span id="privateChatUsername"></span></div>
+      <div id="privateChatMessages"></div>
+      <input type="text" id="privateMessageInput" placeholder="Type a private message...">
+      <button id="sendPrivateMessageButton">Send</button>
+    </div>
+
   </div>
 
   <script src="/socket.io/socket.io.js"></script>
