@@ -69,7 +69,7 @@ Hopefully, if everything went our way, there is one final step to do now. Make s
 
 ## Future work
 
-I was able to integrate mySQL to allow usernames and passwords to log in but still need to work more to allow password recovery and focus more on the secuirty ascepts of the website to prevent injection attacks.
+I have decided that I will stop updating the files in this repo so that it can serve as a foundation for others who choose to get this started, sort of like a blank slate for them. I will however, keep updating my website and the files of course can still be viewed if inspected at the sources tab. 
 
 
 ## Credits
