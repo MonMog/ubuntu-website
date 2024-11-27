@@ -1,3 +1,7 @@
+## Website
+
+http://150.136.164.41/
+
 
 ## Preface
 This is a website I made that is being hosted on a VM instance on Oracle Cloud using the always free tier. I tried using the Linux shape, but due to reasons beyond me, it refused so I had to make peace with Ubuntu. For the website, I am using Apache2 for hosting the static files and then using Node.js for the non-static files. If you, yes YOU, the reader of this, wanted to do something like this, I will hopefully go into detail on how you are able to replicate this same process.
